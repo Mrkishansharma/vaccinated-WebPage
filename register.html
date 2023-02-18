@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-Masai Vaccination</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">
+                <img src="./Images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="vaccinated.html">Vaccinated</a>
+            <a href="register.html" style="color: blue; font-weight: bold;">Register</a>
+        </div>
+    </nav>
+
+    <div class="registerForm">
+        <form>
+            <div>
+                <label for="name">Name:-</label>
+                <input type="text" name="name" placeholder="Name" id="name" minlength="4" required>
+            </div>
+            
+            <div>
+                <label for="age">Age:-</label>
+                <input type="number" name="age" placeholder="Age"  id="age" min="18" max="40" required>
+            </div>
+
+            <div>
+                <label for="designation">Designation:-</label>
+                <input type="radio" name="designation" value="Employee" id="des" required>Employee
+                <input type="radio" name="designation" value="Student" id="des" required>Student
+            </div>
+
+            <div>
+                <label for="Priority">Priority</label>
+                <select name="Priority" id="priority" required>
+                    <option value="">Select</option>
+                    <option value="p0">p0</option>
+                    <option value="p1">p1</option>
+                    <option value="p2">p2</option>
+                    <option value="p3">p3</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Vaccine">Vaccine</label>
+                <select name="Vaccine" id="vaccine" required>
+                    <option value="">Select</option>
+                    <option value="Covishield">Covishield</option>
+                    <option value="Covaxin">Covaxin</option>
+                    <option value="Sputnik">Sputnik</option>
+                </select>
+            </div>
+            
+            <div>
+                <input type="submit" value="Register">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

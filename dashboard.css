@@ -1,0 +1,32 @@
+.vaccinate--td{
+    color: green;
+}
+.delete--td{
+    color: red;
+}
+.delete--td:hover, .vaccinate--td:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+table{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid
+} 
+
+.filterOptions{
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 0px 10px 10px;
+    font-size: 1.2rem;
+}
+.filterOptions > label{
+    margin-left: 40px;
+}
+
+.filterOptions > label:nth-child(1){
+    margin-left: 0px;
+}

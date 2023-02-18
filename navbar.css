@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    background-color: #fff8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+nav > div  img{
+    width: 70px;
+    cursor: pointer;
+}
+nav > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+nav a:hover{
+    font-weight: bold;
+    color: blue;
+}
+
+.posterImage{
+    width: 100%;
+}
+.posterImage > img{
+    width: 100%;
+    height: 100vh;
+}
+

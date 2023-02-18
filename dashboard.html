@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Vaccination</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">
+                <img src="./Images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div>
+            <a href="dashboard.html" style="color: blue; font-weight: bold;">Dashboard</a>
+            <a href="vaccinated.html">Vaccinated</a>
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+
+    <div class="filterOptions">
+
+            <label for="Vaccine">Vaccine:-</label>
+            <select name="Vaccine" id="vaccine" required>
+                <option value="">Select</option>
+                <option value="Covishield">Covishield</option>
+                <option value="Covaxin">Covaxin</option>
+                <option value="Sputnik">Sputnik</option>
+            </select>
+
+            <label for="age">Age:-</label>
+            <select name="age" id="age" required>
+                <option value="">Select</option>
+                <option value="LTH">Low To High</option>
+                <option value="HTL">High To Low</option>
+            </select>
+
+            <label for="Priority">Priority:-</label>
+            <select name="Priority" id="priority" required>
+                <option value="">Select</option>
+                <option value="p0">p0</option>
+                <option value="p1">p1</option>
+                <option value="p2">p2</option>
+                <option value="p3">p3</option>
+            </select>
+
+    </div>
+
+    <div class="tableData">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Designation</th>
+                    <th>Priority</th>
+                    <th>Vaccine</th>
+                    <th>OTP</th>
+                    <th>Delete</th>
+                    <th>Vaccinate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- append here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

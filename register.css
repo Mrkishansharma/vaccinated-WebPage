@@ -1,0 +1,48 @@
+.registerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    border: 1px dashed rgb(51, 49, 49);
+    /* justify-content: center; */
+}
+label{
+    font-size: 1.1rem;
+}
+select{
+    font-size: 1rem;
+    margin-left: 10px;
+    width: 70%;
+}
+input{
+    font-size: 1rem;
+
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: rgb(96, 96, 128);
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(44, 44, 49);
+}
+input[type="number"]{
+    width: 75%;
+    margin-left: 12px;
+}
